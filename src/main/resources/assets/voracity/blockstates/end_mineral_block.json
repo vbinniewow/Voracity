@@ -1,0 +1,51 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "voracity:block/end_mineral_block/end_mineral_block1"
+      },
+      {
+        "model": "voracity:block/end_mineral_block/end_mineral_block1",
+        "y": 90
+      },
+      {
+        "model": "voracity:block/end_mineral_block/end_mineral_block1",
+        "y": 180
+      },
+      {
+        "model": "voracity:block/end_mineral_block/end_mineral_block1",
+        "y": 270
+      },
+      {
+        "model": "voracity:block/end_mineral_block/end_mineral_block2"
+      },
+      {
+        "model": "voracity:block/end_mineral_block/end_mineral_block2",
+        "y": 90
+      },
+      {
+        "model": "voracity:block/end_mineral_block/end_mineral_block2",
+        "y": 180
+      },
+      {
+        "model": "voracity:block/end_mineral_block/end_mineral_block2",
+        "y": 270
+      },
+      {
+        "model": "voracity:block/end_mineral_block/end_mineral_block3"
+      },
+      {
+        "model": "voracity:block/end_mineral_block/end_mineral_block3",
+        "y": 90
+      },
+      {
+        "model": "voracity:block/end_mineral_block/end_mineral_block3",
+        "y": 180
+      },
+      {
+        "model": "voracity:block/end_mineral_block/end_mineral_block3",
+        "y": 270
+      }
+    ]
+  }
+}
