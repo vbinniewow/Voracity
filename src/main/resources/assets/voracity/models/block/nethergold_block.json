@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "voracity:block/nethergold_block_top",
+    "side": "voracity:block/nethergold_block"
+  }
+}

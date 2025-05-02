@@ -1,0 +1,27 @@
+{
+
+  "item.voracity.nethergold_ingot": "Nethergreed Ingot",
+  "item.voracity.hoglin_eye": "Hoglin Eye",
+  "item.voracity.filthy_pig_eye": "Filthy Pig Eye",
+
+  "item.voracity.mancatcher": "Mancatcher",
+
+  "item.voracity.end_mineral": "End Mineral",
+  "item.voracity.sift": "Sift",
+  "item.voracity.chorus_": "Sift",
+  "item.voracity.sifted_end_mineral": "Sifted End Mineral",
+  "item.voracity.amethyst_carver": "Amethyst Carver",
+
+
+
+  "block.voracity.nethergold_block": "Block Of Nethergreed",
+
+  "block.voracity.end_mineral_block": "Block Of End Mineral",
+
+  "itemgroup.voracity.greed_item_group": "Greed",
+  "itemgroup.voracity.addiction_group": "Addiction",
+  "itemgroup.voracity.gluttony_group": "Gluttony",
+    "itemgroup.voracity.knowledge_group": "Knowledge"
+
+
+}
