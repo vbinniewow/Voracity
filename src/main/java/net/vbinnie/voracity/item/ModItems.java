@@ -16,7 +16,7 @@ public class ModItems {
 
     public static final Item HOGLIN_EYE = registerItem("hoglin_eye", new Item(new Item.Settings()));
 
-    public static final Item AMETHYST_CARVER = registerItem("amethyst_carver", new AmethystCarver(new Item.Settings().maxCount(1)));
+    public static final Item AMETHYST_CARVER = registerItem("amethyst_carver", new AmethystCarver(new Item.Settings().maxCount(1).maxDamage(250)));
 
     public static final Item FILTHY_PIG_EYE = registerItem("filthy_pig_eye", new Item(new Item.Settings()));
 
