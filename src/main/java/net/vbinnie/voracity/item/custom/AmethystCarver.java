@@ -47,42 +47,37 @@ public class AmethystCarver extends Item {
         return UseAction.BRUSH;
     }
 
-
-
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
         World world = context.getWorld();
         PlayerEntity player = context.getPlayer();
-        if ( world.getBlockState(context.getBlockPos()).getBlock() == Blocks.END_PORTAL_FRAME ) {
-        world.playSound(player, context.getBlockPos(), SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.AMBIENT, 1, 1);
+        if (world.getBlockState(context.getBlockPos()).getBlock() == Blocks.END_PORTAL_FRAME) {
+            world.playSound(player, context.getBlockPos(), SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.AMBIENT, 1, 1);
             assert player != null;
 
+            if (!world.isClient) { // Ensure this runs only on the server
+                ServerWorld serverWorld = (ServerWorld) world;
+                Identifier lootTableId = new Identifier("voracity", "thesniffsniffdust");
+                LootTable lootTable = serverWorld.getServer().getLootManager().getLootTable(lootTableId);
 
-            MinecraftServer server = world.getServer();
-            ServerCommandSource source = new ServerCommandSource(
-                    CommandOutput.DUMMY,  // No output
-                    Vec3d.ZERO,
-                    Vec2f.ZERO,
-                    server.getOverworld(),
-                    4,  // permission level
-                    "UndetectableCommand",
-                    Text.literal("UndetectableCommand"),
-                    server,
-                    null
-            );
-            server.getCommandManager().executeWithPrefix(source, "give @p diamond_sword");
+                LootContextParameterSet parameterSet = new LootContextParameterSet.Builder(serverWorld)
+                    .add(LootContextParameters.ORIGIN, Vec3d.ofCenter(context.getBlockPos()))
+                    .add(LootContextParameters.THIS_ENTITY, player)
+                    .build(LootContextTypes.CHEST);
 
+                List<ItemStack> loot = lootTable.generateLoot(parameterSet);
 
+                for (ItemStack stack : loot) {
+                    world.spawnEntity(new ItemEntity(world, context.getBlockPos().getX() + 0.5, context.getBlockPos().getY() + .75, context.getBlockPos().getZ() + 0.5, stack));
+                }
+            }
 
             player.getItemCooldownManager().set(this, 20);
-
             world.addBlockBreakParticles(context.getBlockPos(), Blocks.END_PORTAL_FRAME.getDefaultState());
 
-        return ActionResult.SUCCESS;
-        }
-        else {
-
-        return ActionResult.FAIL;
+            return ActionResult.SUCCESS;
+        } else {
+            return ActionResult.FAIL;
         }
     }
 }

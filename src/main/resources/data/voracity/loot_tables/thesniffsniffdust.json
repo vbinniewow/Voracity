@@ -22,7 +22,7 @@
         {
           "type": "minecraft:item",
           "name": "voracity:end_mineral",
-          "weight": 1,
+          "weight": 75,
           "functions": [
             {
               "function": "minecraft:set_count",
