@@ -8,7 +8,7 @@
 
   "item.voracity.end_mineral": "End Mineral",
   "item.voracity.sift": "Sift",
-  "item.voracity.chorus_": "Sift",
+  "item.voracity.chorus_nibble": "A Nibble of Chorus Fruit",
   "item.voracity.sifted_end_mineral": "Sifted End Mineral",
   "item.voracity.amethyst_carver": "Amethyst Carver",
 
@@ -19,8 +19,8 @@
   "block.voracity.end_mineral_block": "Block Of End Mineral",
 
   "itemgroup.voracity.greed_item_group": "Greed",
-  "itemgroup.voracity.addiction_group": "Addiction",
   "itemgroup.voracity.gluttony_group": "Gluttony",
+  "itemgroup.voracity.lust_group": "Lust",
     "itemgroup.voracity.knowledge_group": "Knowledge"
 
 

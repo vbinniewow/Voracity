@@ -27,16 +27,26 @@ public class ModItemGroups {
 
                     }).build());
 
-    public static final ItemGroup ADDICTION_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(Voracity.MOD_ID, "addiction_group"),
+    public static final ItemGroup GLUTTONY_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(Voracity.MOD_ID, "gluttony_group"),
             FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.END_MINERAL))
-                    .displayName(Text.translatable("itemgroup.voracity.addiction_group"))
+                    .displayName(Text.translatable("itemgroup.voracity.gluttony_group"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.AMETHYST_CARVER);
                         entries.add(ModItems.END_MINERAL);
                         entries.add(ModBlocks.END_MINERAL_BLOCK);
                         entries.add(ModItems.SIFT);
+                        entries.add(ModItems.CHORUS_NIBBLE);
                     }).build());
+
+    public static final ItemGroup LUST_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(Voracity.MOD_ID, "lust_group"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.CHORUS_NIBBLE))
+                    .displayName(Text.translatable("itemgroup.voracity.lust_group"))
+                    .entries((displayContext, entries) -> {
+
+                    }).build());
+
 
 
     public static void registerItemGroups() {

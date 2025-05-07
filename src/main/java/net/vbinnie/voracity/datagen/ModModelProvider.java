@@ -17,7 +17,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_MINERAL_BLOCK);
+        // blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AAAAAAAAAAAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH);
 
     }
 
@@ -30,7 +30,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.HOGLIN_EYE, Models.GENERATED);
         itemModelGenerator.register(ModItems.END_MINERAL, Models.GENERATED);
         itemModelGenerator.register(ModItems.AMETHYST_CARVER, Models.GENERATED);
-
+        itemModelGenerator.register(ModItems.CHORUS_NIBBLE, Models.GENERATED);
 
     }
 }

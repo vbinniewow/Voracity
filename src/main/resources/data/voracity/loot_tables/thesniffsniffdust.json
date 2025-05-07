@@ -7,6 +7,20 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "name": "voracity:chorus_nibble",
+          "weight": 25,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "voracity:end_mineral",
           "weight": 1,
           "functions": [
