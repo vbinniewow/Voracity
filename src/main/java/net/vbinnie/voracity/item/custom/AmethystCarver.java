@@ -26,6 +26,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.state.property.Properties;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Identifier;
@@ -41,7 +42,9 @@ import java.util.List;
 import java.util.Objects;
 
 public class AmethystCarver extends Item {
-    public AmethystCarver(Settings settings) { super(settings); }
+    public AmethystCarver(Settings settings) { 
+        super(settings.maxDamage(250)); // Set durability to 250
+    }
 
     public UseAction getUseAction(ItemStack stack) {
         return UseAction.BRUSH;
@@ -51,30 +54,45 @@ public class AmethystCarver extends Item {
     public ActionResult useOnBlock(ItemUsageContext context) {
         World world = context.getWorld();
         PlayerEntity player = context.getPlayer();
-        if (world.getBlockState(context.getBlockPos()).getBlock() == Blocks.END_PORTAL_FRAME) {
-            world.playSound(player, context.getBlockPos(), SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.AMBIENT, 1, 1);
-            assert player != null;
+        BlockPos blockPos = context.getBlockPos();
 
-            if (!world.isClient) { // Ensure this runs only on the server
-                ServerWorld serverWorld = (ServerWorld) world;
-                Identifier lootTableId = new Identifier("voracity", "thesniffsniffdust");
-                LootTable lootTable = serverWorld.getServer().getLootManager().getLootTable(lootTableId);
+        if (world.getBlockState(blockPos).getBlock() == Blocks.END_PORTAL_FRAME) {
+            boolean hasEye = world.getBlockState(blockPos).get(Properties.EYE);
 
-                LootContextParameterSet parameterSet = new LootContextParameterSet.Builder(serverWorld)
-                    .add(LootContextParameters.ORIGIN, Vec3d.ofCenter(context.getBlockPos()))
-                    .add(LootContextParameters.THIS_ENTITY, player)
-                    .build(LootContextTypes.CHEST);
+            if (hasEye) {
+                // Remove the eye and drop it
+                world.setBlockState(blockPos, world.getBlockState(blockPos).with(Properties.EYE, false));
+                world.spawnEntity(new ItemEntity(world, blockPos.getX() + 0.5, blockPos.getY() + 0.75, blockPos.getZ() + 0.5, new ItemStack(Items.ENDER_EYE)));
+                world.playSound(player, blockPos, SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.AMBIENT, 1, 1);
+            } else {
+                // Existing behavior for empty End Portal Frame
+                world.playSound(player, blockPos, SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.AMBIENT, 1, 1);
+                assert player != null;
 
-                List<ItemStack> loot = lootTable.generateLoot(parameterSet);
+                if (!world.isClient) { // Ensure this runs only on the server
+                    ServerWorld serverWorld = (ServerWorld) world;
+                    Identifier lootTableId = new Identifier("voracity", "blocks/end_portal_frame_carve");
+                    LootTable lootTable = serverWorld.getServer().getLootManager().getLootTable(lootTableId);
 
-                for (ItemStack stack : loot) {
-                    world.spawnEntity(new ItemEntity(world, context.getBlockPos().getX() + 0.5, context.getBlockPos().getY() + .75, context.getBlockPos().getZ() + 0.5, stack));
+                    LootContextParameterSet parameterSet = new LootContextParameterSet.Builder(serverWorld)
+                        .add(LootContextParameters.ORIGIN, Vec3d.ofCenter(blockPos))
+                        .add(LootContextParameters.THIS_ENTITY, player)
+                        .build(LootContextTypes.CHEST);
+
+                    List<ItemStack> loot = lootTable.generateLoot(parameterSet);
+
+                    for (ItemStack stack : loot) {
+                        world.spawnEntity(new ItemEntity(world, blockPos.getX() + 0.5, blockPos.getY() + .75, blockPos.getZ() + 0.5, stack));
+                    }
                 }
+
+                world.addBlockBreakParticles(blockPos, Blocks.END_PORTAL_FRAME.getDefaultState());
             }
 
-            player.getItemCooldownManager().set(this, 20);
-            world.addBlockBreakParticles(context.getBlockPos(), Blocks.END_PORTAL_FRAME.getDefaultState());
+            // Reduce durability by 1
+            context.getStack().damage(1, player, (p) -> p.sendToolBreakStatus(context.getHand()));
 
+            player.getItemCooldownManager().set(this, 10);
             return ActionResult.SUCCESS;
         } else {
             return ActionResult.FAIL;
