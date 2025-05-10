@@ -1,5 +1,6 @@
 package net.vbinnie.voracity;
 
+import net.acoyt.pinecone.api.PineLib;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
@@ -34,6 +35,7 @@ public class Voracity implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+		PineLib.init(MOD_ID);
 		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
 		ModItemGroups.registerItemGroups();

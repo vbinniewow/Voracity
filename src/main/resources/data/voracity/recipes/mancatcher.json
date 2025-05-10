@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "voracity:nethergold_ingot"
+    },
+    "B": {
+      "item": "voracity:nethergold_block"
+    }
+  },
+  "pattern": [
+    "R R",
+    " B ",
+    " R "
+  ],
+  "result": {
+    "item": "voracity:mancatcher"
+  },
+  "show_notification": true
+}
