@@ -2,11 +2,7 @@ package net.vbinnie.voracity.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.block.FurnaceBlock;
 import net.minecraft.data.client.*;
-import net.minecraft.item.Item;
-import net.minecraft.state.property.Properties;
-import net.minecraft.util.math.Direction;
 import net.vbinnie.voracity.block.ModBlocks;
 import net.vbinnie.voracity.item.ModItems;
 
@@ -17,7 +13,13 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        // blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AAAAAAAAAAAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SIFTED_END_MINERAL_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WET_SIFTED_END_MINERAL_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FROZEN_SIFTED_END_MINERAL_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_SALT_CRYSTAL_BLOCK);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.EDENIC_GRASS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.EDENIC_SOIL);
 
     }
 
@@ -31,6 +33,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.END_MINERAL, Models.GENERATED);
         itemModelGenerator.register(ModItems.AMETHYST_CARVER, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHORUS_NIBBLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LAVA_CHICKEN, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHICKEN_HOGLIN_EYE_SOUP, Models.GENERATED);
 
     }
 }

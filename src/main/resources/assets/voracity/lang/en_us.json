@@ -12,15 +12,27 @@
   "item.voracity.sifted_end_mineral": "Sifted End Mineral",
   "item.voracity.amethyst_carver": "Amethyst Carver",
 
+  // la-la-lava chchchchicken
+  "item.voracity.lava_chicken": "Lava Chicken (Ooh Mamacita)",
+  "item.voracity.chicken_hoglin_eye_soup": "Chicken and Hoglin Eye Soup",
+
+
 
 
   "block.voracity.nethergold_block": "Block Of Nethergreed",
 
+  "block.voracity.edenic_grass": "Block Of Edenic Grass",
+  "block.voracity.edenic_soil": "Block Of Edenic Soil",
+
   "block.voracity.end_mineral_block": "Block Of End Mineral",
+  "block.voracity.sifted_end_mineral_block": "Block Of Sifted End Mineral",
+  "block.voracity.wet_sifted_end_mineral_block": "Wet Block Of Sifted End Mineral",
+  "block.voracity.frozen_sifted_end_mineral_block": "Frozen Block Of Sifted End Mineral",
+
 
   "itemgroup.voracity.greed_item_group": "Greed",
   "itemgroup.voracity.gluttony_group": "Gluttony",
-  "itemgroup.voracity.bloodlust_group": "Bloodlust",
+  "itemgroup.voracity.lust_group": "Lust",
     "itemgroup.voracity.knowledge_group": "Knowledge"
 
 

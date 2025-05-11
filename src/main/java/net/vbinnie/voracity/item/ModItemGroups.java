@@ -37,14 +37,24 @@ public class ModItemGroups {
                         entries.add(ModBlocks.END_MINERAL_BLOCK);
                         entries.add(ModItems.SIFT);
                         entries.add(ModItems.CHORUS_NIBBLE);
+                        entries.add(ModItems.CHICKEN_HOGLIN_EYE_SOUP);
+                        entries.add(ModItems.LAVA_CHICKEN);
+                        entries.add(ModItems.SIFTED_END_MINERAL);
+                        entries.add(ModBlocks.SIFTED_END_MINERAL_BLOCK);
+                        entries.add(ModBlocks.WET_SIFTED_END_MINERAL_BLOCK);
+                        entries.add(ModBlocks.FROZEN_SIFTED_END_MINERAL_BLOCK);
+                        entries.add(ModBlocks.END_SALT_CRYSTAL_BLOCK);
+
                     }).build());
 
-    public static final ItemGroup LUST_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(Voracity.MOD_ID, "lust_group"),
+    public static final ItemGroup KNOWLEDGE_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(Voracity.MOD_ID, "knowledge_group"),
             FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.CHORUS_NIBBLE))
-                    .displayName(Text.translatable("itemgroup.voracity.lust_group"))
+                    .displayName(Text.translatable("itemgroup.voracity.knowledge_group"))
                     .entries((displayContext, entries) -> {
-
+                        entries.add(ModItems.CHORUS_NIBBLE);
+                        entries.add(ModBlocks.EDENIC_SOIL);
+                        entries.add(ModBlocks.EDENIC_GRASS);
                     }).build());
 
 

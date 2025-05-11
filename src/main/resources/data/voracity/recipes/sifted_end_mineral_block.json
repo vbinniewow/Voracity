@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "R": {
-      "item": "voracity:chorus_nibble"
+      "item": "voracity:sifted_end_mineral"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
     "RRR"
   ],
   "result": {
-    "item": "minecraft:chorus_plant"
+    "item": "voracity:sifted_end_mineral_block"
   },
   "show_notification": true
 }
