@@ -18,7 +18,10 @@ repositories {
 		content {
 			includeGroup "maven.modrinth"
 		}
+
 	}
+
+	maven {url = "https://maven.kyrptonaught.dev"}
 
 	maven {
 		name = "Terraformers"
@@ -51,6 +54,9 @@ dependencies {
 
 	modImplementation "maven.modrinth:midnightlib:${project.midnightlib_version}-fabric"
 	modApi "com.terraformersmc:modmenu:${project.mod_menu_version}"
+
+	modImplementation 'net.kyrptonaught:customportalapi:0.0.1-beta65-1.20'
+	include 'net.kyrptonaught:customportalapi:0.0.1-beta65-1.20'
 }
 
 processResources {

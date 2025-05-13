@@ -1,0 +1,16 @@
+{
+  "type": "voracity:abyss_type",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "voracity:library_of_babel",
+      "lakes": false,
+      "layers": [
+        {
+          "height": 0,
+          "block": "minecraft:air"
+        }
+      ]
+    }
+  }
+}

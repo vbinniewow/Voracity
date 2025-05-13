@@ -14,12 +14,9 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SIFTED_END_MINERAL_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WET_SIFTED_END_MINERAL_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FROZEN_SIFTED_END_MINERAL_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_SALT_CRYSTAL_BLOCK);
 
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.EDENIC_GRASS);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.EDENIC_SOIL);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WHITE);
+
 
     }
 

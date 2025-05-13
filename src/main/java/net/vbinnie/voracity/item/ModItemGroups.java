@@ -41,9 +41,6 @@ public class ModItemGroups {
                         entries.add(ModItems.LAVA_CHICKEN);
                         entries.add(ModItems.SIFTED_END_MINERAL);
                         entries.add(ModBlocks.SIFTED_END_MINERAL_BLOCK);
-                        entries.add(ModBlocks.WET_SIFTED_END_MINERAL_BLOCK);
-                        entries.add(ModBlocks.FROZEN_SIFTED_END_MINERAL_BLOCK);
-                        entries.add(ModBlocks.END_SALT_CRYSTAL_BLOCK);
 
                     }).build());
 
@@ -53,8 +50,8 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.voracity.knowledge_group"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.CHORUS_NIBBLE);
-                        entries.add(ModBlocks.EDENIC_SOIL);
-                        entries.add(ModBlocks.EDENIC_GRASS);
+                        entries.add(ModBlocks.WHITE);
+                        entries.add(ModBlocks.BOOK_BOX);
                     }).build());
 
 

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "voracity:block/wet_sifted_end_mineral_block"
-  }
-}

@@ -12,20 +12,19 @@ import net.minecraft.world.biome.BiomeEffects;
 import net.minecraft.world.biome.GenerationSettings;
 import net.minecraft.world.biome.SpawnSettings;
 import net.minecraft.world.gen.feature.DefaultBiomeFeatures;
-import net.vbinnie.idolatry.Idolatry;
+import net.vbinnie.voracity.Voracity;
 
 public class ModBiomes {
-    public static final RegistryKey<Biome> BRIGHT_ABYSS = register("bright_abyss");
-    public static final RegistryKey<Biome> BURNING_GARDEN = register("burning_garden");
+    public static final RegistryKey<Biome> LIBRARY_OF_BABEL = register("library_of_babel");
+
 
 
 public static RegistryKey<Biome> register(String name) {
-    return RegistryKey.of(RegistryKeys.BIOME, Identifier.of(Idolatry.MOD_ID, name));
+    return RegistryKey.of(RegistryKeys.BIOME, Identifier.of(Voracity.MOD_ID, name));
     }
 
     public static void bootstrap(Registerable<Biome> context) {
-        context.register(BRIGHT_ABYSS, brightAbyss(context));
-        context.register(BURNING_GARDEN, burningGarden(context));
+        context.register(LIBRARY_OF_BABEL, libraryOfBabel(context));
     }
 
     public static void globalOverworldGeneration(GenerationSettings.LookupBackedBuilder builder) {
@@ -45,40 +44,7 @@ public static RegistryKey<Biome> register(String name) {
 
 
 
-    public static Biome brightAbyss(Registerable<Biome> context) {
-        SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
-        spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.ARMOR_STAND, 2, 3, 5));
-
-        DefaultBiomeFeatures.addBatsAndMonsters(spawnBuilder);
-
-        GenerationSettings.LookupBackedBuilder biomeBuilder =
-                new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
-                        context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
-
-        brightAbyssGeneration(biomeBuilder);
-
-        DefaultBiomeFeatures.addDefaultMushrooms(biomeBuilder);
-
-        return new Biome.Builder()
-                .precipitation(false)
-                .downfall(0f)
-                .temperature(0f)
-                .generationSettings(biomeBuilder.build())
-                .spawnSettings(spawnBuilder.build())
-                .effects((new BiomeEffects.Builder())
-                        .waterColor(0xffffff)
-                        .waterFogColor(0xffffff)
-                        .skyColor(0xffffff)
-                        .grassColor(0xffffff)
-                        .foliageColor(0xffffff)
-                        .fogColor(0xffffff)
-                        .moodSound(BiomeMoodSound.CAVE).build())
-                .build();
-
-    }
-
-
-    public static Biome burningGarden(Registerable<Biome> context) {
+    public static Biome libraryOfBabel(Registerable<Biome> context) {
         SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
         spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.ARMOR_STAND, 2, 3, 5));
 

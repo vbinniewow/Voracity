@@ -21,8 +21,10 @@
 
   "block.voracity.nethergold_block": "Block Of Nethergreed",
 
-  "block.voracity.edenic_grass": "Block Of Edenic Grass",
-  "block.voracity.edenic_soil": "Block Of Edenic Soil",
+  "block.voracity.white": "White",
+  "block.voracity.book_box": "Book Box",
+
+
 
   "block.voracity.end_mineral_block": "Block Of End Mineral",
   "block.voracity.sifted_end_mineral_block": "Block Of Sifted End Mineral",
