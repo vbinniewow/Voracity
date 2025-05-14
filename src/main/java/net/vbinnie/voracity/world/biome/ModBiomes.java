@@ -65,12 +65,12 @@ public static RegistryKey<Biome> register(String name) {
                 .generationSettings(biomeBuilder.build())
                 .spawnSettings(spawnBuilder.build())
                 .effects((new BiomeEffects.Builder())
-                        .waterColor(0xffffff)
-                        .waterFogColor(0xffffff)
-                        .skyColor(0xffffff)
-                        .grassColor(0xffffff)
-                        .foliageColor(0xffffff)
-                        .fogColor(0xffffff)
+                        .waterColor(0x000000)
+                        .waterFogColor(0x000000)
+                        .skyColor(0x000000)
+                        .grassColor(0x000000)
+                        .foliageColor(0x000000)
+                        .fogColor(0x000000)
                         .moodSound(BiomeMoodSound.CAVE).build())
                 .build();
 

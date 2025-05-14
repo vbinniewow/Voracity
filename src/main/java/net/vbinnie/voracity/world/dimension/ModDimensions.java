@@ -24,7 +24,7 @@ public class ModDimensions {
 
     public static void bootstrapType(Registerable<DimensionType> context) {
         context.register(ABYSS_DIM_TYPE, new DimensionType(
-                OptionalLong.of(3000), // fixedTime
+                OptionalLong.of(100), // fixedTime
                 false, // hasSkylight
                 true, // hasCeiling
                 true, // ultraWarm

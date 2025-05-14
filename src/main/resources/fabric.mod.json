@@ -3,9 +3,9 @@
 	"id": "voracity",
 	"version": "${version}",
 	"name": "Voracity",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Voracity, the state of being very eager to have a lot of something.",
 	"authors": [
-		"Me!"
+		"Vbinnie (+ credits to Kaupenjoe for his amazing tutorials & DexFlex_YT for extra help)"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -39,5 +39,7 @@
 	},
 	"suggests": {
 		"another-mod": "*"
-	}
+	},
+
+	"accessWidener" : "accesswidener.accesswidener"
 }
