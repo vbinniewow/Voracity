@@ -3,9 +3,10 @@
 	"package": "net.vbinnie.voracity.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
+		"ChickenMixin",
 		"ExampleMixin",
 		"ItemEntityMixin",
-		"ChickenMixin"
+		"StructurePoolBasedGeneratorMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
