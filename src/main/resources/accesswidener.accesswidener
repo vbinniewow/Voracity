@@ -1,3 +1,4 @@
 accessWidener v2 named
 
 accessible method net/minecraft/world/gen/structure/StructureType register (Ljava/lang/String;Lcom/mojang/serialization/Codec;)Lnet/minecraft/world/gen/structure/StructureType;
+
