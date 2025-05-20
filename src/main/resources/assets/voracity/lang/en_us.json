@@ -7,6 +7,8 @@
   "item.voracity.mancatcher": "Mancatcher",
 
   "item.voracity.end_mineral": "End Mineral",
+
+  "item.voracity.end_sugar": "End Sugar",
   "item.voracity.sift": "Sift",
   "item.voracity.chorus_nibble": "A Nibble of Chorus Fruit",
   "item.voracity.sifted_end_mineral": "Sifted End Mineral",
@@ -28,8 +30,8 @@
 
   "block.voracity.end_mineral_block": "Block Of End Mineral",
   "block.voracity.sifted_end_mineral_block": "Block Of Sifted End Mineral",
-  "block.voracity.wet_sifted_end_mineral_block": "Wet Block Of Sifted End Mineral",
-  "block.voracity.frozen_sifted_end_mineral_block": "Frozen Block Of Sifted End Mineral",
+  "block.voracity.end_sugar_crystal": "End Sugar Crystal",
+
 
 
   "itemgroup.voracity.greed_item_group": "Greed",

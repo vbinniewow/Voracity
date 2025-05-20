@@ -2,13 +2,15 @@
   "type": "minecraft:jigsaw",
   "biomes": "voracity:library_of_babel",
   "step": "raw_generation",
+  "terrain_adaptation": "none",
   "spawn_overrides": {},
   "start_pool": "voracity:library_of_babel_tpool",
   "size": 7,
   "start_height": {
-    "above_bottom": 0
+    "above_bottom": 50
   },
-  "start_jigsaw_name": "down",
+  "start_jigsaw_name": "up",
+  "project_start_to_heightmap": "WORLD_SURFACE",
   "max_distance_from_center": 7,
   "use_expansion_hack": false
 }

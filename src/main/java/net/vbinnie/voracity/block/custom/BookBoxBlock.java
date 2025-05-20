@@ -38,10 +38,6 @@ public class BookBoxBlock extends Block {
             Random random = world.getRandom();
             int pageCount = 1 + random.nextInt(5); // 1 to 5 pages
 
-            NbtList pagesLoB = new NbtList();
-            pagesLoB.add(NbtString.of(Text.Serializer.toJson(Text.literal("" //CHANGE THIS DONT FORGET
-                    ))));
-
             for (int i = 0; i < pageCount; i++) {
                 String randomText = generateRandomText(random, 16 + random.nextInt(70));
                 pages.add(NbtString.of(Text.Serializer.toJson(Text.literal(randomText))));
@@ -60,7 +56,7 @@ public class BookBoxBlock extends Block {
 
     private String generateRandomText(Random random, int length) {
         StringBuilder sb = new StringBuilder();
-        String chars = "abcdefghijklmnopqrstuvwxyz .,!?1234567890/: ᔑʖᓵ↸ᒷ⎓⊣⍑╎⋮ꖌꖎᒲリ\uD835\uDE79!¡ᑑ⚍∷ᓭℸ ̣ ⍊∴|| ̇/⨅";
+        String chars = "abcdefghijklmnopqrstuvwxyz ᔑʖᓵ↸ᒷ⎓⊣⍑╎⋮ꖌꖎᒲリ¡ᑑ⚍∷ᓭℸ ̣ ⍊∴|| ̇/⨅";
 
         for (int i = 0; i < length; i++) {
             sb.append(chars.charAt(random.nextInt(chars.length())));

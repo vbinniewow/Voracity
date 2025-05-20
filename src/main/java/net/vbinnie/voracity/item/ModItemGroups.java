@@ -41,6 +41,8 @@ public class ModItemGroups {
                         entries.add(ModItems.LAVA_CHICKEN);
                         entries.add(ModItems.SIFTED_END_MINERAL);
                         entries.add(ModBlocks.SIFTED_END_MINERAL_BLOCK);
+                        entries.add(ModBlocks.END_SUGAR_CRYSTAL);
+                        entries.add(ModItems.END_SUGAR);
 
                     }).build());
 
@@ -50,7 +52,6 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.voracity.knowledge_group"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.CHORUS_NIBBLE);
-                        entries.add(ModBlocks.WHITE);
                         entries.add(ModBlocks.BOOK_BOX);
                     }).build());
 

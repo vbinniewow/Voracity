@@ -17,19 +17,13 @@ public class ModRegistries {
     }
 
     private static void createPortal() {
-        CustomPortalBuilder.beginPortal()
-                .frameBlock(Blocks.PURPUR_BLOCK)
-                .lightWithItem(Items.CHORUS_FRUIT)
-                .destDimID(Identifier.of(Voracity.MOD_ID, "abyss"))
-                .tintColor(0xbe9fcd)
-                .onlyLightInOverworld()
-                .registerPortal();
+
 
         CustomPortalBuilder.beginPortal()
-                .frameBlock(Blocks.PURPUR_BLOCK)
-                .lightWithItem(Items.CHORUS_FRUIT)
+                .frameBlock(ModBlocks.WHITE)
+                .lightWithItem(ModItems.END_SUGAR)
                 .destDimID(Identifier.of(Voracity.MOD_ID, "abyss"))
-                .tintColor(0xbe9fcd)
+                .tintColor(0xcc57d4)
                 .onlyLightInOverworld()
                 .flatPortal()
                 .registerPortal();

@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
 import net.vbinnie.voracity.block.ModBlocks;
+import net.vbinnie.voracity.item.ModItems;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -17,5 +18,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         addDrop(ModBlocks.NETHERGOLD_BLOCK);
         addDrop(ModBlocks.END_MINERAL_BLOCK);
+        addDrop(ModBlocks.END_MINERAL_BLOCK, ModItems.END_SUGAR);
+        addDropWithSilkTouch(ModBlocks.END_MINERAL_BLOCK);
     }
 }

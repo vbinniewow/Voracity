@@ -1,6 +1,6 @@
 package net.vbinnie.voracity.item.custom;
 
-import net.acoyt.pinecone.item.ported.TwoHandedItem;
+
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
@@ -11,7 +11,7 @@ import net.minecraft.item.*;
 
 import java.util.Collection;
 
-public class Mancatcher extends SwordItem implements TwoHandedItem {
+public class Mancatcher extends SwordItem {
 
 
     @Override
@@ -22,7 +22,7 @@ public class Mancatcher extends SwordItem implements TwoHandedItem {
             StatusEffect statusEffect = effect.getEffectType();
 
             if (statusEffect.getCategory() == StatusEffectCategory.BENEFICIAL || statusEffect.getCategory() == StatusEffectCategory.NEUTRAL) {
-                target.removeStatusEffect(statusEffect); // Remove from target
+                target.removeStatusEffect(statusEffect);
                 attacker.addStatusEffect(new StatusEffectInstance(statusEffect, effect.getDuration(), effect.getAmplifier())); // Add to self
             }
         }

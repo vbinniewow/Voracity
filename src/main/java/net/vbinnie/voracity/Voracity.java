@@ -1,6 +1,5 @@
 package net.vbinnie.voracity;
 
-import net.acoyt.pinecone.api.PineLib;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerChunkEvents;
@@ -31,7 +30,7 @@ public class Voracity implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		PineLib.init(MOD_ID);
+
 		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
 		ModItemGroups.registerItemGroups();

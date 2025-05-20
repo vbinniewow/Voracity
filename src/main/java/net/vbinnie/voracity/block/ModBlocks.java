@@ -1,6 +1,8 @@
 package net.vbinnie.voracity.block;
 
+import com.terraformersmc.modmenu.util.mod.Mod;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.GameVersion;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -12,6 +14,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.vbinnie.voracity.Voracity;
 import net.vbinnie.voracity.block.custom.BookBoxBlock;
+import net.vbinnie.voracity.block.custom.LavaBlastedBlock;
 
 public class ModBlocks {
         public static final Block NETHERGOLD_BLOCK = registerBlock("nethergold_block",
@@ -19,7 +22,7 @@ public class ModBlocks {
                         .requiresTool().sounds(BlockSoundGroup.METAL)));
 
     public static final Block END_MINERAL_BLOCK = registerBlock("end_mineral_block",
-            new Block(AbstractBlock.Settings.create().strength(.4f).sounds(BlockSoundGroup.SUSPICIOUS_GRAVEL)));
+            new Block(AbstractBlock.Settings.create().strength(.4f).sounds(BlockSoundGroup.SUSPICIOUS_SAND)));
 
 
 
@@ -27,8 +30,12 @@ public class ModBlocks {
             new Block(IceBlock.Settings.create().strength(4f).sounds(BlockSoundGroup.BONE)));
 
 
+
+    public static final Block END_SUGAR_CRYSTAL = registerBlock("end_sugar_crystal",
+            new Block(AbstractBlock.Settings.create().strength(1.5f).sounds(BlockSoundGroup.AMETHYST_BLOCK).nonOpaque()));
+
     public static final Block SIFTED_END_MINERAL_BLOCK = registerBlock("sifted_end_mineral_block",
-            new ConcretePowderBlock(Blocks.EMERALD_BLOCK // change this later
+            new LavaBlastedBlock(ModBlocks.END_SUGAR_CRYSTAL
                     , AbstractBlock.Settings.create().strength(.4f).sounds(BlockSoundGroup.SAND)));
 
     public static final Block BOOK_BOX = registerUncommonBlock("book_box",

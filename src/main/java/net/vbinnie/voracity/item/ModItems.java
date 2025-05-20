@@ -1,5 +1,6 @@
 package net.vbinnie.voracity.item;
 
+import jdk.jshell.Snippet;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
@@ -51,6 +52,9 @@ public class ModItems {
     public static final Item CHORUS_NIBBLE = registerItem("chorus_nibble", new Item(new Item.Settings()));
 
     public static final Item SIFTED_END_MINERAL = registerItem("sifted_end_mineral", new Item(new Item.Settings()));
+
+
+   public static final Item END_SUGAR = registerItem("end_sugar", new Item(new Item.Settings().food(new FoodComponent.Builder().alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 800), 100).statusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 800), 100).build())));
 
 
 

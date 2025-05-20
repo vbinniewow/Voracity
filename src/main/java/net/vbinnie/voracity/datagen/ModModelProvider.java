@@ -1,5 +1,6 @@
 package net.vbinnie.voracity.datagen;
 
+import com.terraformersmc.modmenu.util.mod.Mod;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.*;
@@ -16,6 +17,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SIFTED_END_MINERAL_BLOCK);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WHITE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_SUGAR_CRYSTAL  );
 
 
     }
@@ -28,6 +30,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.FILTHY_PIG_EYE, Models.GENERATED);
         itemModelGenerator.register(ModItems.HOGLIN_EYE, Models.GENERATED);
         itemModelGenerator.register(ModItems.END_MINERAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.END_SUGAR, Models.GENERATED);
         itemModelGenerator.register(ModItems.AMETHYST_CARVER, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHORUS_NIBBLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.LAVA_CHICKEN, Models.GENERATED);
