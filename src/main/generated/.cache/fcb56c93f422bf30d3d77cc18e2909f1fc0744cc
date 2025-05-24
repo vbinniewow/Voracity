@@ -1,3 +1,6 @@
-// 1.20.1	2025-05-18T13:42:00.0926043	Voracity/Block Loot Tables
-dc975e8a2355d624713f2a4e21e5debb6d34897c data\voracity\loot_tables\blocks\end_mineral_block.json
+// 1.20.1	2025-05-24T09:07:17.9473177	Voracity/Block Loot Tables
+a57a610ada061561f7e40683dba2601091d4bdae data\voracity\loot_tables\blocks\end_mineral_block.json
+e9118db9d4b6892f4fbdbfe48c9495732b34c696 data\voracity\loot_tables\blocks\end_sugar_crystal.json
+65b231c31363bde33468df807caa4eae88f123ef data\voracity\loot_tables\blocks\greed_soul.json
+6b6c32db3e0a5377fdb8729b6e2c6d09732340e1 data\voracity\loot_tables\blocks\empty_soul.json
 da9572afa047c40a6a55e0770a899698278aa4cf data\voracity\loot_tables\blocks\nethergold_block.json

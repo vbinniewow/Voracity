@@ -1,0 +1,34 @@
+{
+  "temperature": 0,
+  "downfall": 0,
+  "has_precipitation": true,
+  "effects": {
+    "sky_color": 0,
+    "fog_color": 16250871,
+    "water_color": 7244939,
+    "water_fog_color": 7244939,
+    "grass_color": 4147220,
+    "foliage_color": 4147220,
+    "ambient_sound": "minecraft:ambient.underwater.loop",
+    "music": {
+      "sound": "minecraft:music.credits",
+      "min_delay": 0,
+      "max_delay": 0,
+      "replace_current_music": false
+    },
+    "music_volume": 45
+  },
+  "spawners": {
+    "ambient": [
+      {
+        "type": "minecraft:armor_stand",
+        "weight": 1,
+        "minCount": 1,
+        "maxCount": 5
+      }
+    ]
+  },
+  "spawn_costs": {},
+  "carvers": {},
+  "features": []
+}

@@ -53,6 +53,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.CHORUS_NIBBLE);
                         entries.add(ModBlocks.BOOK_BOX);
+                        entries.add(ModBlocks.EMPTY_SOUL);
                     }).build());
 
 

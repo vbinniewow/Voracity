@@ -1,0 +1,16 @@
+{
+  "type": "voracity:empty_type",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "voracity:market",
+      "lakes": false,
+      "layers": [
+        {
+          "height": 0,
+          "block": "minecraft:air"
+        }
+      ]
+    }
+  }
+}

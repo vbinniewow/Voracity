@@ -18,7 +18,7 @@ import net.vbinnie.voracity.block.custom.LavaBlastedBlock;
 
 public class ModBlocks {
         public static final Block NETHERGOLD_BLOCK = registerBlock("nethergold_block",
-                new Block(Block.Settings.create().strength(4f)
+                new Block(Block.Settings.create().strength(50.0F, 1200.0F)
                         .requiresTool().sounds(BlockSoundGroup.METAL)));
 
     public static final Block END_MINERAL_BLOCK = registerBlock("end_mineral_block",
@@ -28,6 +28,18 @@ public class ModBlocks {
 
     public static final Block WHITE = registerBlock("white",
             new Block(IceBlock.Settings.create().strength(4f).sounds(BlockSoundGroup.BONE)));
+
+
+    public static final Block EMPTY_SOUL = registerBlock("empty_soul",
+            new Block(IceBlock.Settings.create().strength(6f, 999999999).sounds(BlockSoundGroup.GLASS)));
+
+
+    public static final Block WALL = registerUncommonBlock("wall",
+            new Block(IceBlock.Settings.create().strength(999999999, 999999999).sounds(BlockSoundGroup.DEEPSLATE_BRICKS)));
+
+
+    public static final Block GREED_SOUL = registerBlock("greed_soul",
+            new Block(IceBlock.Settings.create().strength(6f, 999999999).sounds(BlockSoundGroup.NETHER_GOLD_ORE)));
 
 
 
@@ -42,12 +54,13 @@ public class ModBlocks {
             new BookBoxBlock(AbstractBlock.Settings.create().strength(1.5f).sounds(BlockSoundGroup.WOOD)));
 
 
+
     private static Block registerUncommonBlock(String name, Block block) {
         registerUncommonBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(Voracity.MOD_ID, name), block);
     }
 
-    private static void registerUncommonBlockItem(String name, Block block) {
+ private static void registerUncommonBlockItem(String name, Block block) {
         Registry.register(Registries.ITEM, new Identifier(Voracity.MOD_ID, name),
                 new BlockItem(block, new Item.Settings().rarity(Rarity.UNCOMMON)));
     }

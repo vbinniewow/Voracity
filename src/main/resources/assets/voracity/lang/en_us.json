@@ -24,6 +24,12 @@
   "block.voracity.nethergold_block": "Block Of Nethergreed",
 
   "block.voracity.white": "White",
+
+  "block.voracity.empty_soul": "Empty Soul",
+
+  "block.voracity.wall": "Wall",
+
+  "block.voracity.greed_soul": "Greedy Soul",
   "block.voracity.book_box": "Book Box",
 
 
@@ -36,7 +42,6 @@
 
   "itemgroup.voracity.greed_item_group": "Greed",
   "itemgroup.voracity.gluttony_group": "Gluttony",
-  "itemgroup.voracity.lust_group": "Lust",
     "itemgroup.voracity.knowledge_group": "Knowledge"
 
 

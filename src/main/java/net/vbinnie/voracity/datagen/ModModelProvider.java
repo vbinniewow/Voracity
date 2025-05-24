@@ -16,7 +16,11 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SIFTED_END_MINERAL_BLOCK);
 
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WALL);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WHITE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.EMPTY_SOUL);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GREED_SOUL);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_SUGAR_CRYSTAL  );
 
 

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:chicken"
+    },
+    "E": {
+      "item": "voracity:hoglin_eye"
+    },
+    "H": {
+      "item": "minecraft:bowl"
+    }
+  },
+  "pattern": [
+    "EG",
+    "H"
+  ],
+  "result": {
+    "item": "voracity:chicken_hoglin_eye_soup"
+  },
+  "show_notification": true
+}

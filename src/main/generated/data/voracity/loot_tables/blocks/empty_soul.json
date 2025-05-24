@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "voracity:end_mineral_block"
+          "name": "voracity:empty_soul"
         }
       ],
       "rolls": 1.0
