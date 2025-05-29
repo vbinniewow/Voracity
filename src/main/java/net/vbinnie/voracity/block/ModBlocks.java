@@ -30,16 +30,11 @@ public class ModBlocks {
             new Block(IceBlock.Settings.create().strength(4f).sounds(BlockSoundGroup.BONE)));
 
 
-    public static final Block EMPTY_SOUL = registerBlock("empty_soul",
-            new Block(IceBlock.Settings.create().strength(6f, 999999999).sounds(BlockSoundGroup.GLASS)));
 
 
     public static final Block WALL = registerUncommonBlock("wall",
             new Block(IceBlock.Settings.create().strength(999999999, 999999999).sounds(BlockSoundGroup.DEEPSLATE_BRICKS)));
 
-
-    public static final Block GREED_SOUL = registerBlock("greed_soul",
-            new Block(IceBlock.Settings.create().strength(6f, 999999999).sounds(BlockSoundGroup.NETHER_GOLD_ORE)));
 
 
 

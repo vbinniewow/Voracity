@@ -1,0 +1,11 @@
+{
+  "type": "voracity:fourthdim_type",
+  "generator": {
+    "type": "minecraft:noise",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "voracity:fourthdimbiome"
+    },
+    "settings": "minecraft:floating_islands"
+  }
+}

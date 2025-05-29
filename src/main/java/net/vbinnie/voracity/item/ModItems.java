@@ -10,6 +10,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 
 import net.vbinnie.voracity.Voracity;
+import net.vbinnie.voracity.effect.ModEffects;
 import net.vbinnie.voracity.item.custom.AmethystCarver;
 import net.vbinnie.voracity.item.custom.Mancatcher;
 import net.vbinnie.voracity.item.custom.Sifter;
@@ -54,7 +55,7 @@ public class ModItems {
     public static final Item SIFTED_END_MINERAL = registerItem("sifted_end_mineral", new Item(new Item.Settings()));
 
 
-   public static final Item END_SUGAR = registerItem("end_sugar", new Item(new Item.Settings().food(new FoodComponent.Builder().alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 800), 100).statusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 800), 100).build())));
+   public static final Item END_SUGAR = registerItem("end_sugar", new Item(new Item.Settings().food(new FoodComponent.Builder().alwaysEdible().statusEffect(new StatusEffectInstance(ModEffects.FOURTHDIMENSIONALSTRETCHING, StatusEffectInstance.INFINITE), 100).build())));
 
 
 

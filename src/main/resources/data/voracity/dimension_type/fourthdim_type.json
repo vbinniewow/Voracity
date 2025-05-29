@@ -2,8 +2,8 @@
   "ambient_light": 1.0,
   "bed_works": true,
   "coordinate_scale": 1.0,
-    "effects": "minecraft:nether",
-  "fixed_time": 0,
+  "effects": "minecraft:overworld",
+  "fixed_time": 100,
   "has_ceiling": false,
   "has_raids": false,
   "has_skylight": false,
@@ -19,8 +19,8 @@
       "min_inclusive": 0
     }
   },
-  "natural": true,
-  "piglin_safe": true,
+  "natural": false,
+  "piglin_safe": false,
   "respawn_anchor_works": false,
-  "ultrawarm": false
+  "ultrawarm": true
 }

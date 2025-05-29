@@ -17,8 +17,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.NETHERGOLD_BLOCK);
-        addDrop(ModBlocks.EMPTY_SOUL);
-        addDrop(ModBlocks.GREED_SOUL);
         addDrop(ModBlocks.END_MINERAL_BLOCK);
         addDrop(ModBlocks.END_SUGAR_CRYSTAL, ModItems.END_SUGAR);
         addDropWithSilkTouch(ModBlocks.END_SUGAR_CRYSTAL);

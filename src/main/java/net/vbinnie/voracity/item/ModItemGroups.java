@@ -51,9 +51,7 @@ public class ModItemGroups {
             FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.CHORUS_NIBBLE))
                     .displayName(Text.translatable("itemgroup.voracity.knowledge_group"))
                     .entries((displayContext, entries) -> {
-                        entries.add(ModItems.CHORUS_NIBBLE);
-                        entries.add(ModBlocks.BOOK_BOX);
-                        entries.add(ModBlocks.EMPTY_SOUL);
+
                     }).build());
 
 

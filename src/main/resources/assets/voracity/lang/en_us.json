@@ -42,7 +42,10 @@
 
   "itemgroup.voracity.greed_item_group": "Greed",
   "itemgroup.voracity.gluttony_group": "Gluttony",
-    "itemgroup.voracity.knowledge_group": "Knowledge"
+    "itemgroup.voracity.knowledge_group": "Knowledge",
 
 
+  "effect.voracity.fourthdimensionalstretching": "4th Dimensional Stretching",
+  "death.attack.fourthdimension": "%1$s was stretched into the 4th dimension",
+  "death.attack.fourthdimension.player": "%1$s was stretched into the 4th dimension by %2$s"
 }

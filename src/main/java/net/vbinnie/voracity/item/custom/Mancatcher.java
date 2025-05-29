@@ -30,10 +30,11 @@ public class Mancatcher extends SwordItem {
             attacker.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 800));
         }
         if (target.getType() == EntityType.TURTLE   ) {
-            attacker.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 500));
+            attacker.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 100));
         }
         if (target.getType() == EntityType.WARDEN) {
             attacker.addStatusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 800));
+            attacker.addStatusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 800));
         }
 
         if (target.getType() == EntityType.GLOW_SQUID) {
@@ -64,7 +65,7 @@ public class Mancatcher extends SwordItem {
             attacker.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 800));
         }
 
-        if (target.getType() == EntityType.HORSE) {
+        if (target.getType() == EntityType.HORSE || target.getType() == EntityType.SKELETON_HORSE || target.getType() == EntityType.ZOMBIE_HORSE) {
             attacker.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 800, 2));
         }
 

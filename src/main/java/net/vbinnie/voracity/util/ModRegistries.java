@@ -13,20 +13,6 @@ import net.vbinnie.voracity.item.ModItems;
 
 public class ModRegistries {
     public static void registerModStuffs() {
-
-        createPortal();
-    }
-
-    private static void createPortal() {
-
-
-        CustomPortalBuilder.beginPortal()
-                .frameBlock(ModBlocks.WHITE)
-                .lightWithItem(ModBlocks.WALL.asItem())
-                .destDimID(Identifier.of(Voracity.MOD_ID, "market"))
-                .tintColor(0x000000)
-                .onlyLightInOverworld()
-                .registerPortal();
     }
 
 }
