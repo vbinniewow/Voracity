@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "voracity:market",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 1,
+    "separation": 0,
+    "spread_type": "linear",
+    "salt": 34896384,
+    "frequency_reduction_method": "default",
+    "frequency": 1
+  }
+}
