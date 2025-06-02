@@ -16,7 +16,8 @@ import net.vbinnie.voracity.item.ModItems;
 import java.util.Objects;
 
 public class Sifter extends Item {
-    public Sifter(Settings settings) { super(settings); }
+    public Sifter(Settings settings) { super(settings.maxDamage(250)); // Set durability to 250
+         }
 
     public UseAction getUseAction(ItemStack stack) {
         return UseAction.BRUSH;

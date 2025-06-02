@@ -1,4 +1,5 @@
-// 1.20.1	2025-05-24T09:07:17.9463172	Voracity/Tags for minecraft:block
-27a086eede1ddf2a3afc0f158e146f75422a6038 data\minecraft\tags\blocks\mineable\pickaxe.json
+// 1.20.1	2025-05-29T14:25:14.9561575	Voracity/Tags for minecraft:block
+d1e8e042d796e05ec05183e1d1c22fd0d89c7c2c data\minecraft\tags\blocks\mineable\pickaxe.json
 27a086eede1ddf2a3afc0f158e146f75422a6038 data\minecraft\tags\blocks\needs_diamond_tool.json
+ea4eed1754f2deec56e6d2e5aabe63bd1c83f426 data\minecraft\tags\blocks\mineable\shovel.json
 fe09d8404d9303f436dbb87568ccd37707a73fc9 data\minecraft\tags\blocks\mineable\axe.json

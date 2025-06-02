@@ -45,7 +45,7 @@
     "itemgroup.voracity.knowledge_group": "Knowledge",
 
 
-  "effect.voracity.fourthdimensionalstretching": "4th Dimensional Stretching",
-  "death.attack.fourthdimension": "%1$s was stretched into the 4th dimension",
+  "effect.voracity.spaghettification": "Spaghettification",
+  "death.attack.fourthdimension": "%1$s discovered a 4th dimensional space axis",
   "death.attack.fourthdimension.player": "%1$s was stretched into the 4th dimension by %2$s"
 }

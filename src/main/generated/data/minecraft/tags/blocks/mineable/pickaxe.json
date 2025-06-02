@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "voracity:end_sugar_crystal",
     "voracity:nethergold_block"
   ]
 }

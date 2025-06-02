@@ -1,8 +1,6 @@
 package net.vbinnie.voracity.effect;
 
-
-import
-net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -11,8 +9,8 @@ import net.minecraft.util.Identifier;
 import net.vbinnie.voracity.Voracity;
 
 public class ModEffects {
-    public static final StatusEffect FOURTHDIMENSIONALSTRETCHING = registerStatusEffect("fourthdimensionalstretching",
-            new FourthDimesionalStretchEffect(StatusEffectCategory.HARMFUL, 0x00ffcc)).value();
+    public static final RegistryEntry<StatusEffect> SPAGHETTIFICATION = registerStatusEffect("spaghettification",
+            new SpaghettificationEffect(StatusEffectCategory.HARMFUL, 0x00ffcc));
 
 
 

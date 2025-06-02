@@ -7,8 +7,8 @@ import net.minecraft.world.World;
 import net.vbinnie.voracity.damage_type.ModDamageTypes;
 
 
-public class FourthDimesionalStretchEffect extends StatusEffect {
-    public FourthDimesionalStretchEffect(StatusEffectCategory category, int color) {
+public class SpaghettificationEffect extends StatusEffect {
+    public SpaghettificationEffect(StatusEffectCategory category, int color) {
         super(category, color);
     }
 

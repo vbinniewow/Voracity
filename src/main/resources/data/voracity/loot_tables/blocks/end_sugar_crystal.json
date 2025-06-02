@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "conditions": [{"condition": "minecraft:survives_explosion"}],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "voracity:end_sugar",
+          "functions": []
+        }
+      ],
+      "rolls": 4
+    }
+  ],
+  "random_sequence": "voracity:blocks/end_sugar_crystal"
+}

@@ -1,5 +1,6 @@
 package net.vbinnie.voracity.datagen;
 
+import com.terraformersmc.modmenu.util.mod.Mod;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -18,7 +19,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         addDrop(ModBlocks.NETHERGOLD_BLOCK);
         addDrop(ModBlocks.END_MINERAL_BLOCK);
-        addDrop(ModBlocks.END_SUGAR_CRYSTAL, ModItems.END_SUGAR);
-        addDropWithSilkTouch(ModBlocks.END_SUGAR_CRYSTAL);
+        addDrop(ModBlocks.SIFTED_END_MINERAL_BLOCK);
     }
 }

@@ -6,6 +6,7 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.stat.Stat;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 
@@ -36,7 +37,7 @@ public class ModItems {
                     new FoodComponent.Builder()
                             .meat()
                             .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 600, 0, true, true), 100)
-                            .saturationModifier(3)
+                            .saturationModifier(5)
                             .build())
             .rarity(Rarity.EPIC)
             .fireproof()));
@@ -55,13 +56,17 @@ public class ModItems {
     public static final Item SIFTED_END_MINERAL = registerItem("sifted_end_mineral", new Item(new Item.Settings()));
 
 
-   public static final Item END_SUGAR = registerItem("end_sugar", new Item(new Item.Settings().food(new FoodComponent.Builder().alwaysEdible().statusEffect(new StatusEffectInstance(ModEffects.FOURTHDIMENSIONALSTRETCHING, StatusEffectInstance.INFINITE), 100).build())));
+   public static final Item END_SUGAR = registerItem("end_sugar", new Item(new Item.Settings()));
 
 
 
     public static final Item MANCATCHER = registerItem("mancatcher",
-            new Mancatcher(ToolMaterials.NETHERITE, 4, -2.8f,
-              new Item.Settings().fireproof()));
+            new Mancatcher(
+                    ToolMaterials.NETHERITE,
+                    4,
+                    -2.8f,
+              new Item.Settings()
+                      .fireproof()));
 
 
 

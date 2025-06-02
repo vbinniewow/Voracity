@@ -57,7 +57,7 @@ public class Voracity implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModLootTableModifier.register();
 		ModRegistries.registerModStuffs();
-		LOGGER.info("im feeling voracious");
+		LOGGER.info("im feeling voracious!");
 
 
 

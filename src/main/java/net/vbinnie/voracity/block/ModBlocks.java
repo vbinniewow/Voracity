@@ -13,7 +13,6 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.vbinnie.voracity.Voracity;
-import net.vbinnie.voracity.block.custom.BookBoxBlock;
 import net.vbinnie.voracity.block.custom.LavaBlastedBlock;
 
 public class ModBlocks {
@@ -44,9 +43,6 @@ public class ModBlocks {
     public static final Block SIFTED_END_MINERAL_BLOCK = registerBlock("sifted_end_mineral_block",
             new LavaBlastedBlock(ModBlocks.END_SUGAR_CRYSTAL
                     , AbstractBlock.Settings.create().strength(.4f).sounds(BlockSoundGroup.SAND)));
-
-    public static final Block BOOK_BOX = registerUncommonBlock("book_box",
-            new BookBoxBlock(AbstractBlock.Settings.create().strength(1.5f).sounds(BlockSoundGroup.WOOD)));
 
 
 

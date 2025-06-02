@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-	"voracity:amethyst_carver"
+    "voracity:amethyst_carver",
+    "voracity:sift"
   ]
 }
